@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px #eee;
+    padding: 15px;
+}
+.navbar-paragraph{
+    font-family: 'Fredericka the Great', serif;
+    font-size: 32px;
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(#e93737, #120f0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-list-items li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 0 5px;
+}
+.navbar-list-items li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #120f0f;
+}
+.burgery-headline{
+    position: relative;
+}
+.burgery-headline h1{
+    position: absolute;
+    bottom: 10px;
+    padding: 15px;
+    color: rgba(0,0,0,0.6);
+}
+.burgery-about{
+    display: flex;
+    justify-content: center;
+    padding: 55px 100px;
+    align-items: center;
+}
+.burgery-about div{
+    margin-right: 30px;
+}
+.burgery-about-div{
+text-align: center;
+padding: 15px;
+width: 40%;
+letter-spacing: 2px;
+line-height: 22px;
+}
+.burgery-about-div h2{
+    margin: 15px 0;
+}
+.burgery-about-div p{
+    margin: 20px 0;   
+}
+.burgery-menu-div{
+    text-align: center;
+}
+.burgery-menu-div h2{
+    margin: 25px 0;
+}
+.menu-item{
+    text-align: left;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+.menu-item h4{
+    letter-spacing: 3px;
+}
+.menu-item p{
+    font-size: 12px;
+}
+.burgery-contact{
+    width:65%;
+    margin: auto auto;
+}
+.burgery-contact h2{
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+.burgery-contact p:nth-child(odd){
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.burgery-contact p:nth-child(2){
+    color: #073850;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.contact-form-input{
+    margin-bottom: 25px;
+}
+.contact-form-input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ccc;
+
+}
+form button{
+    border: none;
+    background-color: #ccc;
+    padding: 12px 25px;
+
+}
+
+footer{
+    background-color: #ddd;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+footer p a{
+    color: #000;
+    
+}
+
