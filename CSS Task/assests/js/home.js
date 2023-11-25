@@ -10,12 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const animations = [
   { target: ".navbar-lg", props: { opacity: 1, y: 15 }, start: "top top" },
-  { target: ".headline-div", props: { opacity: 1, x: 50 }, start: "0vh" },
-  {
-    target: ".headline .img-wrapper",
-    props: { opacity: 1, x: -50 },
-    start: "0vh",
-  },
   { target: ".service-about", props: { opacity: 0, y: -50 }, start: "-600vh" },
   {
     target: ".card-top",
@@ -76,6 +70,27 @@ animations.forEach((animation) => {
     ease: "none",
   });
 });
+
+const animationsTo = [
+  { target: ".headline-div", props: { opacity: 1, x: -800 }, start: "0vh" },
+    {
+      target: ".headline .img-wrapper",
+      props: { opacity: 1, x: 800 },
+      start: "0vh",
+    }
+  ]
+  animationsTo.forEach((animation) => {
+    gsap.to(animation.target, {
+      ...animation.props,
+      scrollTrigger: {
+        trigger: animation.target,
+        scrub: 2,
+        start: animation.start,
+        end: animation.end || "center center",
+      },
+      ease: "none",
+    });
+  });
 
 const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline
