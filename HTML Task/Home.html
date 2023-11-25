@@ -32,40 +32,61 @@
   <body>
     <!-- Start of Navbar -->
     <nav class="navbar">
-      <p class="navbar-paragraph">BURGURY</p>
-      <ul class="navbar-list-items">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+      <div class="image-wrapper open">
+        <a href="#" onclick="toggleMenu()">
+          <img src="./assests/images/bars-sort.svg" alt="menu" class="icon" />
+        </a>
+      </div>
+      <div class="image-wrapper close">
+        <a href="#" onclick="toggleMenu()">
+          <img src="./assests/images/close.svg" alt="menu" class="icon" />
+        </a>
+      </div>
+      <div class="nav-section">
+        <div class="logo-div">
+          <h2>The Burgury Shop</h2>
+        </div>
+        <div class="menu-items">
+          <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="#menu" onclick="toggleMenu()">Our Menu</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- End of Navbar -->
 
     <!-- Start of Main -->
-    <main>
+    <main id="home">
       <!-- Start of Burgery page headline -->
       <section class="burgery-headline">
-        <div>
-          <img
-            src="assests/images/hamburger.jpg"
-            alt="hamburger image"
-            width="100%" />
+        <p>The Burgury Shop</p>
+        <div class="burgery-headline-div">
+          <h1>
+            Cravings for <br />
+            Burger, <br />Order Burger.
+          </h1>
+          <div class="headline-img-wrapper">
+            <img
+              src="assests/images/hamburger-v.jpg"
+              alt="hamburger image"
+              width="100%" />
+          </div>
         </div>
-        <h1>Want Burger, Order Burger</h1>
       </section>
       <!-- End of Burgery page headline -->
 
       <!-- Start of Burgery page About -->
-      <section class="burgery-about">
-        <div>
+      <section class="burgery-about" id="about">
+        <div class="img-wrapper about">
           <img
             src="assests/images/tablesetting2.jpg"
             alt="Pasta folra image"
-            width="400px" />
+            width="100%" />
         </div>
-        <div class="burgery-about-div" id="about">
+        <div class="burgery-about-div margin-left" id="about">
           <div>
             <h2>About Burgery</h2>
             <p>Tradition since 1889</p>
@@ -93,8 +114,8 @@
       <!-- End of Burgery page About -->
 
       <!-- Start of Burgery page Menu -->
-      <section class="burgery-about" id="menu">
-        <div class="burgery-menu-div">
+      <section class="burgery-about burgury-menu" id="menu">
+        <div class="burgery-menu-div margin-right">
           <h2>Our Menu</h2>
           <div class="menu-item">
             <h3>Bread Basket</h3>
@@ -123,11 +144,11 @@
             <p>With syrup, butter and lots of berries 8.50</p>
           </div>
         </div>
-        <div>
+        <div class="img-wrapper menu">
           <img
             src="assests/images/tablesetting.jpg"
             alt="Fried Brocly image"
-            width="400px" />
+            width="100%" />
         </div>
       </section>
       <!-- End of Burgery page Menu -->
@@ -139,8 +160,8 @@
           <p>
             We offer full-service catering for any event, large or small. We
             understand your needs and we will cater the food to satisfy the
-            biggerst criteria of them all, both look and taste. <br> Do not hesitate
-            to contact us.
+            biggerst criteria of them all, both look and taste. <br />
+            Do not hesitate to contact us.
           </p>
           <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
           <p>
@@ -159,20 +180,27 @@
             <input type="date" required />
           </div>
           <div class="contact-form-input">
-            <input type="text" placeholder="Message / Special Requirements" required />
+            <input
+              type="text"
+              placeholder="Message / Special Requirements"
+              required />
           </div>
           <button type="submit">SEND MESSAGE</button>
         </form>
       </section>
       <!-- End of Burgery page Contact -->
+
+      <!-- Start of footer -->
+      <footer>
+        <p>Powered by <a href="#">the burgery shop</a></p>
+      </footer>
+      <!-- End of footer -->
     </main>
     <!-- End of main -->
-    <!-- Start of footer -->
-    <footer>
-      
-        <p>Powered by <a href="www.w3scool.com">w3.css</a></p>
-      
-    </footer>
-    <!-- End of footer -->
+
+    <!-- Scripts part -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="assests/js/home.js"></script>
   </body>
 </html>
